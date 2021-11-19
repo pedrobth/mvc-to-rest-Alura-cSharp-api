@@ -60,21 +60,6 @@ namespace Alura.ListaLeitura.WebApp.Controllers
         }
 
         [HttpGet]
-        public IActionResult DetalhesSemHTML(int id)
-        {
-            var model = _repo.Find(id);
-            if (model == null)
-            {
-                return NotFound();
-            }
-            //return View(model.ToModel());
-            //XML
-            //JSON
-            model.ImagemCapa = null;
-            return Json(model);
-        }
-
-        [HttpGet]
         public Livro LivroJson(int id)
         {
             return _repo.Find(id);
