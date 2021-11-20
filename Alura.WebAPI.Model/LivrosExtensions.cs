@@ -33,19 +33,19 @@ namespace Alura.ListaLeitura.Modelos
             };
         }
 
-        public static LivroApi ToApi(this Livro livro)
-        {
-            return new LivroApi
-            {
-                Id = livro.Id,
-                Titulo = livro.Titulo,
-                Subtitulo = livro.Subtitulo,
-                Resumo = livro.Resumo,
-                Autor = livro.Autor,
-                Capa = $"/api/capas/{livro.Id}",
-                Lista = livro.Lista.ParaString()
-            };
-        }
+        //public static LivroApi ToApi(this Livro livro)
+        //{
+        //    return new LivroApi
+        //    {
+        //        Id = livro.Id,
+        //        Titulo = livro.Titulo,
+        //        Subtitulo = livro.Subtitulo,
+        //        Resumo = livro.Resumo,
+        //        Autor = livro.Autor,
+        //        Capa = $"/api/capas/{livro.Id}",
+        //        Lista = livro.Lista.ParaString()
+        //    };
+        //}
 
         public static LivroUpload ToModel(this Livro livro)
         {
