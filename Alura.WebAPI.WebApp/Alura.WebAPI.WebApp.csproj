@@ -48,8 +48,10 @@
   <ItemGroup>
     <None Remove="Api\" />
     <None Remove="Microsoft.AspNetCore.Mvc.Formatters.Xml" />
+    <None Remove="Formatter\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Api\" />
+    <Folder Include="Formatter\" />
   </ItemGroup>
 </Project>
