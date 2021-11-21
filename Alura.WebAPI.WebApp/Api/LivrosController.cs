@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Alura.WebAPI.WebApp.Api
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     // ControllerBase does not have the view support, so it is better for an api
     public class LivrosController : ControllerBase
     {
@@ -37,7 +37,7 @@ namespace Alura.WebAPI.WebApp.Api
 
         }
 
-        [HttpGet("capa/{id}")]
+        [HttpGet("{id}/capa")]
         public IActionResult ImagemCapa(int id)
         {
             byte[] img = _repo.All
