@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Alura.WebAPI.WebApp.Api
+namespace Alura.ListaLeitura.Services
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -25,7 +25,6 @@ namespace Alura.WebAPI.WebApp.Api
         [HttpPost]
         public async Task<IActionResult> Token(LoginModel model)
         {
-            // Console.WriteLine("         *************         na ROTA api/login utilizando POST **********      ");
             if (!ModelState.IsValid)
             {
                 return BadRequest();
