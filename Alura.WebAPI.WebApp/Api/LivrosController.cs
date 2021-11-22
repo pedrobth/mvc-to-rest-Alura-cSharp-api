@@ -1,11 +1,12 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using Alura.ListaLeitura.Modelos;
 using Alura.ListaLeitura.Persistencia;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Alura.WebAPI.WebApp.Api
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     // ControllerBase does not have the view support, so it is better for an api

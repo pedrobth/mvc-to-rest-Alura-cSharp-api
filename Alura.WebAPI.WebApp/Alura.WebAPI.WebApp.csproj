@@ -9,6 +9,8 @@
     <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Xml" Version="2.1.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.2.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.1.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -49,9 +51,11 @@
     <None Remove="Api\" />
     <None Remove="Microsoft.AspNetCore.Mvc.Formatters.Xml" />
     <None Remove="Formatter\" />
+    <None Remove="System.IdentityModel.Tokens.Jwt" />
+    <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Api\" />
-    <Folder Include="Formatter\" />
+    <Folder Include="Formatters\" />
   </ItemGroup>
 </Project>
