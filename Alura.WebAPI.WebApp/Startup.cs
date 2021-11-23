@@ -29,7 +29,7 @@ namespace Alura.ListaLeitura.WebApp
             });
 
             services.AddDbContext<AuthDbContext>(options => {
-                options.UseSqlServer(Configuration.GetConnectionString("AuthDB"));
+                options.UseSqlServer(Configuration.GetConnectionString("AuthDb"));
             });
 
             services.AddIdentity<Usuario, IdentityRole>(options =>
