@@ -49,14 +49,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Api\" />
     <None Remove="Microsoft.AspNetCore.Mvc.Formatters.Xml" />
     <None Remove="Formatter\" />
     <None Remove="System.IdentityModel.Tokens.Jwt" />
     <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Api\" />
     <Folder Include="Formatters\" />
   </ItemGroup>
 </Project>
