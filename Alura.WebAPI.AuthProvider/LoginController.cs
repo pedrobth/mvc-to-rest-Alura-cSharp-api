@@ -45,7 +45,6 @@ namespace Alura.ListaLeitura.Services
             var credenciais = new SigningCredentials(chave, SecurityAlgorithms.HmacSha256);
             var token = new JwtSecurityToken(
                     issuer: "Alura.WebApp",
-                    audience: "Postman",
                     claims: direitos,
                     signingCredentials: credenciais,
                     expires: DateTime.Now.AddMinutes(1700)

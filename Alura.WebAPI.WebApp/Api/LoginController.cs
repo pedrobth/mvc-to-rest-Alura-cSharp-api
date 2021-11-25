@@ -12,7 +12,7 @@ using Microsoft.IdentityModel.Tokens;
 namespace Alura.WebAPI.WebApp.Api
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/InsideWebApp/[controller]")]
     public class LoginController : ControllerBase
     {
 
