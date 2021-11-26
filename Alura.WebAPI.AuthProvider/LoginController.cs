@@ -39,10 +39,14 @@ namespace Alura.ListaLeitura.Services
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
             };
 
-            var chave = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("passsword-with-more-than-32-chars"));
+            var chave = new SymmetricSecurityKey(
+                System.Text.Encoding.UTF8.GetBytes(
+                    "password-with-more-than-32-chars"
+                ));
             var credenciais = new SigningCredentials(chave, SecurityAlgorithms.HmacSha256);
             var token = new JwtSecurityToken(
-                    issuer: "Alura.WebApp",
+                    issuer: "Alura.AuthProvider",
+                    audience: "mandioca",
                     claims: direitos,
                     signingCredentials: credenciais,
                     expires: DateTime.Now.AddMinutes(1700)
